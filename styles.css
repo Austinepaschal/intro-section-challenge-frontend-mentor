@@ -1,0 +1,76 @@
+/* :root{
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+}
+h1{
+    color: var(--MediumGray);
+    background-color: var(--AlmostBlack);
+} */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.first-section{
+    height: 250px;
+    width: 300px;
+    background-color: rgb(45, 67, 23);
+}
+.second-section{
+    height: 250px;
+    width: 500px;
+    background-color: rgb(20, 50, 90);
+    color: hsl(12, 99%, 74%);
+    border-color: #fefefe
+}
+#section_three{
+    height: 700px;
+    width: 700px;
+    border: 2px solid blue;
+    /* background: url("./images/image-hero-desktop.png"); */
+    background-image: url("images/image-hero-mobile.png");
+    background-color: blueviolet;
+    background-blend-mode:normal;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    opacity: 0.7;
+    background-attachment: fixed;
+}
+#section_four{
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+    padding: 200px;
+    border: 20px solid red;
+}
+.five-section{
+    height: 200px;
+    width: 300px;
+    border: blue solid 4px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-right: 20px;
+}
+hr{
+    border-color: brown;
+}
+.paschal{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 10px;
+}
+.okonkwo{
+    background-color: blueviolet;
+}
+.chiemelie{
+    background-color: #808000;
+}
+.augustine{
+    height: 200px;
+    width: 200px;
+    background-color: #ff7fef
+}

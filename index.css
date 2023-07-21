@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.main-body{
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+}
+.main-header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    gap: 50px;
+}
+.menu-btn{
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin-right: 70px;
+}
+.control{
+    display: none;
+}
+.close-ctrl{
+    display: none;
+}
+.main-section{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    font-weight: 500;
+}
+.div1{
+    width: 80%;
+    display: flex;
+    gap: 30px;
+}
+.div2{
+    width: 20%;
+    display: flex;
+    gap: 30px;
+}
+.Register{
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 20px;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    font-weight: 500;
+}
+.Login{
+    margin-top: 10px;
+}
+.clickable{
+    cursor: pointer;
+}
+.Feature:hover{
+    color: black;
+}
+.Company:hover{
+    color: black;
+}
+.About:hover{
+    color: black;
+}
+.Login:hover{
+    color: black;
+}
+.Register:hover{
+    color: black;
+}
+.main-sec{
+    width: 100%;
+    display: flex;
+}
+.Make{
+    font-size: 100px;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-left: 180px;
+}
+.Get{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-left: 180px;
+    color: hsl(0, 0%, 41%);
+}
+.Learn{
+    width: 100px;
+    height: 40px;
+    border: 1px solid;
+    margin-left: 180px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+}
+.Learn:hover{
+    background-color: white;
+    color: black;
+}
+.div4{
+    width: 25%;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-image: url(./images/image-hero-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.div5{
+    margin-top: 40px;
+    margin-left: 180px;
+}
+.Feature .ul-list1{
+    display: none;
+    
+}
+ .ul-list2{
+    display: none;
+}
+.Feature:hover .ul-list1{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 20;
+    background-color: white;
+}
+.Company:hover .ul-list2{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 15;
+    background-color: white;
+}
+.icon{
+    width: 10px;
+    height: 10px;
+}
+
+
+.close-btn{
+    display: none;
+}
+
+.arrow-up1{
+    display: none;
+}
+.Feature:hover .arrow-up1{
+    display: inline;
+}
+.Feature:hover .arrow-down1{
+    display: none;
+}
+
+.arrow-up2{
+    display: none;
+}
+.Company:hover .arrow-up2{
+    display: inline;
+}
+.Company:hover .arrow-down2{
+    display: none;
+}
+
+@media screen and (max-width: 985px) {
+    .div2{
+        display: block;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .Login{
+        margin-left: 0px;
+    }
+    .Register{
+        width: 70px;
+        height: 40px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main-section{
+        display: none;
+    }
+     .menu-btn{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .control:checked ~ .main-section{
+        width: 100px;
+        height: 400px;
+        background-color: white;
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+    
+    .control:checked ~ .close-btn {
+        display: block;
+    }
+    .control:checked ~ .menu-btn {
+        display: none;
+    }
+
+    .close-ctrl:checked ~ .main-section{
+        display: none;
+    }
+   
+    .close-ctrl:checked ~ .close-btn{
+        display: none;
+    }
+    
+    .close-ctrl:checked ~ .menu-btn {
+        display: none;
+    }
+    
+    .Make{
+        font-size: 50px;
+        font-weight: 300;
+        margin-left: 50px;
+    }
+    .Get{
+        margin-left: 50px;
+    }
+    .Learn{
+        margin-left: 50px;
+    }
+    .main-sec{
+        flex-direction: column-reverse;   
+    }
+    .div1{
+        flex-direction: column;
+        gap: 70px;
+    }
+    .Careers{
+        margin-top: -15px;
+    }
+    .About{
+        margin-top: -50px;
+    }
+    .ul-list1, .ul-list2{
+        position: static;
+    }
+    .div4{
+        width: 80%;
+        margin: 64px auto 0;
+    }
+    .div5{
+        width: 10px;
+        height: 15px;
+        display: flex;
+        margin-left: 15px;
+        gap: 20px;
+    }
+    .image-1{
+        width: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    list-style: none;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+}
+li{
+
+    list-style-image: url(./images/icon-menu.svg);
+    list-style: circle;
+    list-style-type:upper-alpha;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 500px;
+}
+th,td{
+    border: 1px solid;
+    text-align: right;
+    height: 30px;
+    vertical-align: top;
+}
+table{
+    background-color: blue;
+    width: 100%;
+    padding: 0;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+    padding: 50px;
+}
+.logo{
+    width: 5%;
+    background-color: blueviolet;
+    vertical-align: middle;
+
+}
+.feature,
+.company,
+.history,
+.careers,
+.about,
+.login,
+.register{
+    width: 5%;
+    background-color: blue;
+}
+.login, .register{
+    padding-left: 5%;
+    border: 1px solid;
+}
+th > button{
+    padding: 5px 10px;
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    border-radius: 8px;
+    border: unset;
+    cursor: pointer;
+}
+.text::first-line{
+    font-size: 45px;
+    font-weight: bold;
+}
+.stick{
+    position: relative;
+}
+.text:nth-child(1){
+    color: blue;
+    border: 1px solid red;
+    position: static;
+    top: 0;
+    bottom: 600px;
+}
+.img{
+    float: left;
+    margin-top: 15px;
+}
+.main-section > div{
+    float: left;
+}
+.mentor{
+    float: left;
+    margin-left: 50px;
+}
+.Login{
+    margin-left: 400px;
+}
+div:nth-child(2){
+    width: 200px;
+    background: url(./images/client-meet.svg) no-repeat;
+    background-size: cover;
+    background: red;
+
+}
+p::selection{
+background-color:  rebeccapurple;}
+#chapter-one:target, #chapter-two:target, #chapter-three:target,#chapter-four:target{
+    color: orangered;
+    font-size: 20px;
+}
+.in:optional{
+    width: 500px;
+}
+.in:focus{
+    color: red;
+}
+.njn:active{
+    font-weight: 900;
+    color: red;
+    font-size: 35px;
+}
+.njn:visited{
+    font-size: 30px;
+    color: blue;
+}
+.main-section{
+    display: inline-flex;
+}
+.main-section > div{
+    color: red;
+}
+q:lang(no){
+    quotes: "'" "'";
+} */
